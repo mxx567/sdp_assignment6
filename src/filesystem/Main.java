@@ -19,5 +19,8 @@ public class Main {
         }
         directoryNode.accept(ts);
         System.out.println(ts.getTotalSize());
+        StatisticsVisitor stv = new StatisticsVisitor();
+        directoryNode.accept(stv);
+        System.out.println(stv.getMaxDepth());
     }
 }
