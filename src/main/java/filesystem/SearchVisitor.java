@@ -6,7 +6,7 @@ public class SearchVisitor implements Visitor {
     private final String nameMatches;
     private final long minSize;
     private String prefix;
-    private ArrayList<String> matches = new ArrayList<>();
+    private final ArrayList<String> matches = new ArrayList<>();
 
 
     public SearchVisitor(String nameMatches, long minSize) {
@@ -35,6 +35,8 @@ public class SearchVisitor implements Visitor {
     }
 
     public ArrayList<String> getMatches() {
-        return matches;
+        ArrayList<String> sorted = new ArrayList<>(matches);
+        sorted.sort(String::compareTo);
+        return sorted;
     }
 }

@@ -5,8 +5,11 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/filesystem/java" type="java-test-resource" />
     </content>
+    <content url="file://$MODULE_DIR$/test/filesystem/java" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.11.4" level="project" />
   </component>
 </module>

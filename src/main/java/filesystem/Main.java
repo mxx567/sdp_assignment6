@@ -3,7 +3,7 @@ package filesystem;
 import java.util.ArrayList;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         DirectoryNode directoryNode = new DirectoryNode("src");
         directoryNode.addElement(new FileNode("main.java", 600));
         directoryNode.addElement(new FileNode("readme.md", 200));
